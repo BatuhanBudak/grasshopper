@@ -51,6 +51,11 @@ a {
   background-color: transparent;
 }
 
+a:active,
+a:hover {
+  outline: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -78,6 +83,39 @@ picture {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.button,
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  color: #002c43;
+  background-color: #45c14e;
+  border: none;
+  border-radius: 50px;
+  appearance: none;
+  text-decoration: none;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.cta-button.start-coding,
+.cta-button.get-the-app {
+  max-width: 260px;
+  padding: 15px 50px;
+  margin-inline: 0;
+  color: #fff;
+  background-color: #45c14e;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  border-radius: 50px;
 }
 
 @keyframes fadeIn {
