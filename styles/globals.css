@@ -85,6 +85,10 @@ picture {
   }
 }
 
+main {
+  position: relative;
+}
+
 .button,
 .cta-button {
   display: flex;

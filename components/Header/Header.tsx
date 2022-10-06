@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import useToggle from "../../hooks/useToggle";
-import NavDrawer from "./NavDrawer";
 import NavMobile from "./NavMobile";
 import NavDesktop from "./NavDesktop";
 import { Logo, LogoTitleBlue } from "../../Icons";
@@ -8,8 +7,6 @@ import FixedHeader from "./FixedHeader";
 
 export default function Header() {
   const [drawerOpen, toggleDrawer] = useToggle();
-
-  const headerRef = useRef();
 
   useEffect(() => {
     if (drawerOpen) {

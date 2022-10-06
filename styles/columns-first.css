@@ -1,0 +1,110 @@
+.hero--turquoise,
+.section-touts--turquoise,
+.section-columns--turquoise,
+.section-stories--turquoise {
+  background-color: #4ce8e3;
+}
+.section-columns {
+  position: relative;
+}
+
+@media (max-width: 717px) {
+  .section-columns--learn-to-code .section-columns__container {
+    padding: 300px 32px 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-columns--half-width,
+  .section-columns--full-width {
+    flex: 0 1 auto;
+  }
+}
+
+.section-columns--full-width {
+  width: 100%;
+}
+
+@media (max-width: 717px) {
+  .section-columns--learn-to-code .background-images__image {
+    left: 50%;
+  }
+}
+
+.section-columns--learn-to-code
+  .background-images__image--grasshopper-meditate {
+  width: 160px;
+  height: 252px;
+  background-image: url("../public/column-images/grasshopper__practice__meditate.svg");
+}
+
+@media (max-width: 717px) {
+  .section-columns--learn-to-code
+    .background-images__image--grasshopper-meditate {
+    margin-left: -80px;
+    top: auto;
+    bottom: 100px;
+  }
+}
+
+.section-columns--learn-to-code .background-images__image--devices {
+  width: 192px;
+  height: 137px;
+  background-image: url("../public/column-images/devices.svg");
+}
+
+@media (max-width: 717px) {
+  .section-columns--learn-to-code .background-images__image--devices {
+    margin-left: -96px;
+    top: 100px;
+  }
+}
+
+.section-columns__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.section-columns__column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section-columns__column--one-column {
+  text-align: center;
+}
+
+.section-columns__column--one-column .section-columns__column__title {
+  max-width: 100%;
+  margin-left: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-columns--learn-to-code .section-columns__column__title {
+  order: 1;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 717px) {
+  .section-columns--learn-to-code .section-columns__column__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+  }
+}
+
+.section-columns__column__body {
+  order: 5;
+  width: 100%;
+}
+.section-columns--learn-to-code .section-columns__column__body {
+  order: 2;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}

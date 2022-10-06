@@ -3,12 +3,13 @@ import { GrassHopperDrawerLogo } from "../../Icons";
 
 export default function FixedHeader() {
   const [showHeader, setShowHeader] = useState(false);
+  const HEADER_HEIGHT = 100;
 
   useEffect(() => {
     function handleScroll() {
       let currentScroll = window.scrollY;
 
-      if (currentScroll <= 100) {
+      if (currentScroll <= HEADER_HEIGHT) {
         setShowHeader(false);
       } else {
         setShowHeader(true);

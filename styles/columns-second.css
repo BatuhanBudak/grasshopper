@@ -1,0 +1,117 @@
+.section-animated-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.section-animated-background__container {
+  opacity: 0.55;
+  position: relative;
+}
+
+.section-animated-background__svg-square,
+.section-animated-background__svg-box {
+  display: block;
+  position: absolute;
+  /* opacity: 0; */
+  transition: opacity 500ms ease, transform 1000ms ease;
+}
+
+.section-animated-background__svg-square {
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 4%);
+}
+
+.section-animated-background__svg-square--1 {
+  width: 90px;
+  height: 90px;
+  top: 143px;
+  left: 29px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.section-animated-background__svg-square--2 {
+  width: 40px;
+  height: 40px;
+  top: 85px;
+  left: 216px;
+}
+.section-animated-background__svg-square--3 {
+  width: 224px;
+  height: 224px;
+  top: 423px;
+  left: 21px;
+}
+
+.section-animated-background__svg-square--4 {
+  width: 40px;
+  height: 40px;
+  top: 737px;
+  left: 152px;
+}
+
+.section-animated-background__svg-square--5 {
+  width: 152px;
+  height: 152px;
+  top: 62px;
+  left: 404px;
+}
+
+.section-animated-background__svg-square--6 {
+  width: 40px;
+  height: 40px;
+  top: 169px;
+  left: 641px;
+}
+
+.section-animated-background__svg-square--7 {
+  width: 224px;
+  height: 224px;
+  top: 270px;
+  left: 680px;
+}
+
+.section-animated-background__svg-square--8 {
+  width: 100px;
+  height: 100px;
+  top: 62px;
+  left: 793px;
+}
+
+.section-animated-background__svg-square--9 {
+  width: 170px;
+  height: 170px;
+  top: 190px;
+  right: 36px;
+}
+
+.section-animated-background__svg-square--10 {
+  width: 83px;
+  height: 83px;
+  top: 380px;
+  left: 300px;
+}
+
+.section-animated-background__svg-square--11 {
+  width: 248px;
+  height: 248px;
+  top: 565px;
+  left: 366px;
+}
+
+.section-animated-background__svg-box--1 {
+  width: 212px;
+  height: 212px;
+  top: 250px;
+  left: 416px;
+}
+
+.section-animated-background__svg-box--2 {
+  width: 190px;
+  height: 190px;
+  top: 555px;
+  right: 37px;
+}

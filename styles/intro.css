@@ -1,0 +1,471 @@
+.hero--light-grey,
+.section-touts--light-grey,
+.section-columns--light-grey,
+.section-stories--light-grey {
+  background-color: #fcfcfc;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 717px) {
+  .hero {
+    height: 873px;
+  }
+}
+
+.background-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.background-images__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.background-images__image--mobile {
+  display: block;
+}
+
+.background-images__image--desktop {
+  display: none;
+}
+
+.hero__background-images__image.background-images__image--background-hills,
+.hero__background-images__image.background-images__image--bush-dark,
+.hero__background-images__image.background-images__image--bush-light,
+.hero__background-images__image.background-images__image--tree-light,
+.hero__background-images__image.background-images__image--tree-dark,
+.hero__background-images__image.background-images__image--tree-skinny,
+.hero__background-images__image.background-images__image--grasshopper,
+.hero__background-images__image.background-images__image--macbook,
+.hero__background-images__image.background-images__image--android-device,
+.hero__background-images__image.background-images__image--hero_android,
+.hero__background-images__image.background-images__image--hero_ios {
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+}
+.hero__background-images__image.background-images__image--background-hills {
+  background-image: url("../public/hero-bg-images/hero__background-hills.svg");
+  background-position: center bottom;
+  z-index: 1;
+}
+
+.hero__background-images__image.background-images__image--bush-dark {
+  width: 135.12361px;
+  height: 45.37361px;
+  background-image: url("../public/hero-bg-images/hero__bush-dark.svg");
+  transform: translateX(7.11818px) translateY(-2.82609px);
+  transform-origin: 50% 50%;
+}
+
+@media (max-width: 717px) {
+  .hero__background-images__image.background-images__image--bush-dark {
+    width: 208px;
+    height: 69px;
+  }
+}
+
+.hero__background-images__image.background-images__image--bush-dark-2 {
+  z-index: 4;
+}
+
+.hero__background-images__image.background-images__image--bush-light {
+  width: 184.48611px;
+  height: 62.825px;
+  z-index: 3;
+  background-image: url("../public/hero-bg-images/hero__bush-light.svg");
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(3.95455px)
+    translateY(-2.82609px);
+  transform-origin: 50% 50%;
+}
+
+@media (max-width: 717px) {
+  .hero__background-images__image.background-images__image--bush-light {
+    width: 208px;
+    height: 69px;
+    left: unset;
+    bottom: 5%;
+    right: -8%;
+    z-index: 2;
+  }
+}
+
+.hero__background-images__image.background-images__image--macbook {
+  z-index: 2;
+  width: 227.36667px;
+  height: 132.63055px;
+  bottom: 24%;
+  right: 37%;
+  background-image: url("../public/hero-bg-images/hero__macbook.png");
+}
+.hero__background-images__image.background-images__image--tree-dark,
+.hero__background-images__image.background-images__image--tree-skinny {
+  z-index: 2;
+}
+.hero__background-images__image.background-images__image--tree-dark {
+  width: 135.62222px;
+  height: 182.49167px;
+  bottom: 13%;
+  left: -1.5%;
+  background-image: url("../public/hero-bg-images/hero__tree-dark.svg");
+  transform: translateX(3.16364px);
+  transform-origin: 50% 50%;
+}
+
+.hero__background-images__image.background-images__image--tree-skinny {
+  width: 82.76944px;
+  height: 182.49167px;
+  bottom: 13%;
+  left: 14.5%;
+  background-image: url("../public/hero-bg-images/hero__tree-skinny.svg");
+  transform: translateX(6.32727px) translateY(-2.82609px);
+  transform-origin: 50% 50%;
+}
+
+.hero__background-images__image.background-images__image--grasshopper {
+  z-index: 1;
+  width: 283.70972px;
+  height: 293.18333px;
+  bottom: 3%;
+  right: 6.5%;
+  transform: rotate3d(0deg) translateX(1.58182px) translateY(-1.41304px);
+  transform-origin: 50% 50%;
+}
+
+.hero__background-images__image.background-images__image--android-device {
+  z-index: 3;
+  width: 148.58611px;
+  height: 288.69583px;
+  bottom: 16.25%;
+  right: 23%;
+  background-image: url("../public/hero-bg-images/hero__pixel.png");
+}
+
+.hero__background-images__image.background-images__image--bush-dark-1 {
+  bottom: 15%;
+  left: -11%;
+  z-index: 2;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(5.53636px)
+    translateY(-2.82609px);
+  transform-origin: 50% 50%;
+  background-image: url("../public/hero-bg-images/hero__bush-dark.svg");
+}
+
+@media (max-width: 717px) {
+  .hero__background-images__image.background-images__image--bush-dark-1 {
+    bottom: 0%;
+    left: -13%;
+    z-index: 4;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .hero__background-images__image.background-images__image--hero_android,
+  .hero__background-images__image.background-images__image--hero_ios {
+    width: calc(208px + 55 * (100vw - 375px) / 342);
+    height: calc(424.36px + 103.64 * (100vw - 375px) / 342);
+    margin-left: calc(-104px + -27.5 * (100vw - 375px) / 342);
+  }
+}
+.hero__background-images__image.background-images__image--hero_ios {
+  background-image: url("../public/hero-bg-images/hero__ios.png");
+}
+
+.hero__background-images__image.background-images__image--hero_android {
+  background-image: url("../public/hero-bg-images/hero__pixel.png");
+}
+
+.hero__background-images__image.background-images__image--hero_android,
+.hero__background-images__image.background-images__image--hero_ios {
+  z-index: 3;
+  width: 208px;
+  height: 424.36px;
+  margin-left: -104px;
+  left: 50%;
+  bottom: 2.75%;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 2;
+  margin-inline: auto;
+  padding-inline: 20px;
+  max-width: 1200px;
+  padding-top: 30px;
+}
+
+.hero__title,
+.hero__subtitle,
+.hero__ctas {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.hero__title,
+.hero__subtitle {
+  margin-bottom: 20px;
+}
+.hero__title {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hero__subtitle__options {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow-y: hidden;
+  height: 29px;
+  margin-top: 5px;
+}
+.hero__subtitle__options::before,
+.hero__subtitle__options::after {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  display: block;
+  content: "";
+  left: 0;
+  z-index: 2;
+}
+.hero__subtitle__options::before {
+  top: 0;
+  background-image: linear-gradient(
+    -180deg,
+    #fcfcfc 0%,
+    rgba(252, 252, 252, 0) 100%
+  );
+}
+
+.hero__subtitle__options::after {
+  bottom: 0;
+  background-image: linear-gradient(
+    0deg,
+    #fcfcfc 0%,
+    rgba(252, 252, 252, 0) 100%
+  );
+}
+.hero__subtitle__options__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 600ms ease;
+  animation: 32000ms ease 2000ms infinite normal both heroSubtitleTextAnimation;
+}
+
+@keyframes heroSubtitleTextAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+
+  2.5% {
+    transform: translateY(0%);
+  }
+  5% {
+    transform: translateY(-5%);
+  }
+  7.5% {
+    transform: translateY(-5%);
+  }
+  10% {
+    transform: translateY(-10%);
+  }
+  12.5% {
+    transform: translateY(-10%);
+  }
+  15% {
+    transform: translateY(-15%);
+  }
+  17.5% {
+    transform: translateY(-15%);
+  }
+  20% {
+    transform: translateY(-20%);
+  }
+  22.5% {
+    transform: translateY(-20%);
+  }
+  25% {
+    transform: translateY(-25%);
+  }
+  27.5% {
+    transform: translateY(-25%);
+  }
+  30% {
+    transform: translateY(-30%);
+  }
+  32.5% {
+    transform: translateY(-30%);
+  }
+  35% {
+    transform: translateY(-35%);
+  }
+  37.5% {
+    transform: translateY(-35%);
+  }
+  40% {
+    transform: translateY(-40%);
+  }
+  42.5% {
+    transform: translateY(-40%);
+  }
+  45% {
+    transform: translateY(-45%);
+  }
+  47.5% {
+    transform: translateY(-45%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  52.5% {
+    transform: translateY(-50%);
+  }
+  55% {
+    transform: translateY(-55%);
+  }
+  57.5% {
+    transform: translateY(-55%);
+  }
+  60% {
+    transform: translateY(-60%);
+  }
+  62.5% {
+    transform: translateY(-60%);
+  }
+  65% {
+    transform: translateY(-65%);
+  }
+  67.5% {
+    transform: translateY(-65%);
+  }
+  70% {
+    transform: translateY(-70%);
+  }
+  72.5% {
+    transform: translateY(-70%);
+  }
+  75% {
+    transform: translateY(-75%);
+  }
+  77.5% {
+    transform: translateY(-75%);
+  }
+  80% {
+    transform: translateY(-80%);
+  }
+  82.5% {
+    transform: translateY(-80%);
+  }
+  85% {
+    transform: translateY(-85%);
+  }
+  87.5% {
+    transform: translateY(-85%);
+  }
+  90% {
+    transform: translateY(-90%);
+  }
+  92.5% {
+    transform: translateY(-90%);
+  }
+  95% {
+    transform: translateY(-95%);
+  }
+  97.5% {
+    transform: translateY(-95%);
+  }
+  100% {
+    transform: translateY(-95%);
+  }
+}
+
+.hero__subtitle__options__option {
+  width: 100%;
+  flex: 1 0 0;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  line-height: 1;
+  text-align: center;
+}
+
+.ctas {
+  display: flex;
+  flex-direction: row;
+}
+
+.ctas--desktop {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .hero .ctas--desktop {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.ctas .cta__item {
+  margin-bottom: 20px;
+}
+
+.ctas .cta__item:first-child {
+  margin-left: 0;
+}
+.cta-button.start-coding.not-ie,
+.cta-button.get-the-app.not-ie {
+  display: flex;
+}
+
+.isMobile.isIOS .start-coding.android,
+.isMobile.isIOS .get-the-app.android,
+.isMobile.isIOS .section-columns__column__image--android,
+.isMobile.isIOS .background-images__image--hero_android {
+  display: none;
+}
+
+.cta-button.google-play,
+.cta-button.apple-itunes {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cta-button.google-play {
+  background-image: url("../public/hero-bg-images/button--google-play.png");
+}
+.cta-button.google-play.no-left-margin,
+.cta-button.apple-itunes.no-left-margin {
+  margin-left: 0;
+}
+.cta-button.google-play.ie-only,
+.cta-button.apple-itunes.ie-only {
+  display: none;
+}
+.ctas--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
