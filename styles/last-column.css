@@ -1,0 +1,129 @@
+.section-columns--get-started {
+  overflow: hidden;
+}
+
+.section-columns--get-started .background-images__image {
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+}
+
+@media (max-width: 718px) {
+  .section-columns--get-started .background-images__image--cloud-1 {
+    width: 101px;
+    height: 34px;
+    bottom: 33%;
+    left: 7%;
+    background-image: url("../public/last-column-imgs/section--get-started__cloud.svg");
+  }
+}
+.section-columns--get-started .background-images__image--cloud-2 {
+  width: 87px;
+  height: 29px;
+  bottom: 22%;
+  right: 9%;
+  background-image: url("../public/last-column-imgs/section--get-started__cloud.svg");
+}
+
+@media (max-width: 718px) {
+  .section-columns--get-started .background-images__image--cloud-3 {
+    width: 53.53px;
+    height: 17.7px;
+    bottom: 33%;
+    right: 9%;
+    background-image: url("../public/last-column-imgs/section--get-started__cloud.svg");
+  }
+}
+
+@media (max-width: 940px) {
+  .section-columns--get-started .background-images__image--grasshopper-mama {
+    right: 10%;
+    bottom: -70%;
+  }
+}
+
+@media (max-width: 718px) {
+  .section-columns--get-started .background-images__image--grasshopper-mama {
+    bottom: -42%;
+    right: 50%;
+    width: 178px;
+    height: 520px;
+    margin-right: -89px;
+    background-image: url("../public/last-column-imgs/section--get-started__grasshopper-mama.svg");
+  }
+}
+
+.section-columns__column--mobile-1x1 {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vw;
+  max-height: 300px;
+  min-height: 300px;
+  padding: 80px 20px;
+}
+.section-columns__column--large-title .section-columns__column__title {
+  font-size: 24px;
+  line-height: 32px;
+  max-width: none;
+}
+.section-columns__column__ctas {
+  order: 6;
+}
+
+.section-columns__column__ctas {
+  margin-left: 0;
+}
+.section-columns__column__ctas .start-coding {
+  min-width: 280px;
+  min-height: 50px;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(750%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-750%);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.inview.section-columns--get-started .background-images__image--cloud-1 {
+  animation: 600ms linear 0ms infinite alternate both slideLeft;
+  animation-duration: 60000ms;
+}
+.inview.section-columns--get-started .background-images__image--cloud-2 {
+  animation: 600ms linear 0ms infinite alternate both slideRight;
+  animation-duration: 90000ms;
+}
+
+.inview.section-columns--get-started .background-images__image--cloud-3 {
+  animation: 600ms linear 0ms infinite alternate both slideLeft;
+  animation-duration: 120000ms;
+}
+
+.inview.section-columns--get-started
+  .background-images__image--grasshopper-mama {
+  animation: 600ms ease 0ms 1 normal both fadeInUp;
+  animation-delay: 600ms;
+}

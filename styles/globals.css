@@ -29,6 +29,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+@media (min-width: 718px) {
+  html,
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 
 h1,
 h2,
