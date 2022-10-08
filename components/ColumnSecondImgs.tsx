@@ -248,8 +248,10 @@ export const BoxFirst = () => (
         height="174.644258"
       ></rect>
       <g id="Rectangle-2">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-1"></use>
+        <use xlinkHref="#path-1"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="2"
@@ -259,8 +261,10 @@ export const BoxFirst = () => (
         ></rect>
       </g>
       <g id="Rectangle-2-Copy-2">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-2"></use>
+        <use xlinkHref="#path-2"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="2"
@@ -270,8 +274,10 @@ export const BoxFirst = () => (
         ></rect>
       </g>
       <g id="Rectangle-2-Copy">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-3"></use>
+        <use xlinkHref="#path-3"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="174.335861"
@@ -281,8 +287,10 @@ export const BoxFirst = () => (
         ></rect>
       </g>
       <g id="Rectangle-2-Copy-3">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-4"></use>
+        <use xlinkHref="#path-4"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="174.335861"
@@ -350,8 +358,10 @@ export const BoxSecond = () => (
         height="174.644258"
       ></rect>
       <g id="Rectangle-2">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-1"></use>
+        <use xlinkHref="#path-1"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="2"
@@ -361,8 +371,10 @@ export const BoxSecond = () => (
         ></rect>
       </g>
       <g id="Rectangle-2-Copy-2">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-2"></use>
+        <use xlinkHref="#path-2"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="2"
@@ -372,8 +384,10 @@ export const BoxSecond = () => (
         ></rect>
       </g>
       <g id="Rectangle-2-Copy">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-3"></use>
+        <use xlinkHref="#path-3"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="174.335861"
@@ -383,8 +397,10 @@ export const BoxSecond = () => (
         ></rect>
       </g>
       <g id="Rectangle-2-Copy-3">
-        <use fill="#4A4A4A" fillRule="evenodd" xlinkHref="#path-4"></use>
+        <use xlinkHref="#path-4"></use>
         <rect
+          fill="#4A4A4A"
+          fillRule="evenodd"
           stroke="#4A4A4A"
           strokeWidth="2"
           x="174.335861"

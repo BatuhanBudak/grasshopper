@@ -10,30 +10,45 @@ export default class Carousel extends Component {
       dots: false,
       infinite: true,
       arrows: false,
-      dotsClass: "slick-dots",
       speed: 2000,
       autoplay: true,
       autoSpeed: 4000,
-      centerPadding: "20px",
+      centerPadding: "70px",
       swipeToSlide: true,
       cssEase: "ease-in-out",
+      initialSlide: 0,
       centerMode: true,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 3500,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 3000,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
+            slidesToShow: 3,
+            slidesToScroll: 1,
           },
         },
+        {
+          breakpoint: 2000,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerPadding: "10px",
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+
         {
           breakpoint: 480,
           settings: {

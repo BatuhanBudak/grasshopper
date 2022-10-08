@@ -8,7 +8,9 @@
   text-align: center;
 }
 
-.section-columns__column--one-column .section-columns__column__title {
+.section-columns--concepts
+  .section-columns__column--one-column
+  .section-columns__column__title {
   max-width: 100%;
   margin-left: 0;
   margin-bottom: 40px;
@@ -65,5 +67,70 @@
   .section-columns--concepts .section-columns__column__body__paragraph {
     margin-right: 0;
     margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 718px) {
+  .section-columns__container {
+    flex-direction: row;
+    padding-inline: 40px;
+    margin-inline: auto;
+    padding-block: 124px 94px;
+    max-width: 1200px;
+  }
+
+  .section-columns--concepts
+    .section-columns__column--one-column
+    .section-columns__column__title {
+    margin-bottom: 64px;
+  }
+  .section-columns--concepts .section-columns__column__body--row-1,
+  .section-columns--concepts .section-columns__column__body--row-3 {
+    animation: 600ms linear 0ms infinite alternate both slideRightQuarter;
+  }
+  .section-columns--concepts .section-columns__column__body--row-2 {
+    animation: 600ms linear 0ms infinite alternate both slideLeftQuarter;
+    animation-duration: 180s;
+  }
+  .section-columns--concepts .section-columns__column__body--row-1 {
+    animation-duration: 135s;
+  }
+  .section-columns--concepts .section-columns__column__body--row-3 {
+    position: relative;
+    left: 198px;
+    animation-duration: 210s;
+  }
+
+  .section-columns--concepts .section-columns__column__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 64px;
+    width: calc(100% + 280px);
+    margin-left: -140px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section-columns__container {
+    flex: 1 0 0;
+  }
+}
+
+@keyframes slideRightQuarter {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-187.5%);
+  }
+}
+@keyframes slideLeftQuarter {
+  0% {
+    transform: translateX(187%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
