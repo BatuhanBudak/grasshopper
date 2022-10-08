@@ -75,3 +75,25 @@
   height: 17px;
   position: relative;
 }
+
+@media screen and (min-width: 718px) {
+  .footer__container {
+    justify-content: space-evenly;
+    max-width: none;
+    padding-block: 50px;
+    padding-inline: 40px;
+  }
+  .footer__nav--main,
+  .footer__nav--link-nav {
+    width: 100%;
+    min-width: 100px;
+    max-width: 175px;
+    flex: 1 0 0;
+  }
+  .footer__nav--resource {
+    order: 2;
+  }
+  .footer__nav--legal {
+    order: 3;
+  }
+}

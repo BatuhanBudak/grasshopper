@@ -1,6 +1,18 @@
 .section-columns--get-started {
   overflow: hidden;
 }
+@media screen and (min-width: 1000px) {
+  .section-columns--half-width,
+  .section-columns--full-width {
+    flex: 1 0 0;
+  }
+}
+.background-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 
 .section-columns--get-started .background-images__image {
   top: auto;
@@ -8,14 +20,20 @@
   bottom: auto;
   right: auto;
 }
-
+.section-columns--get-started .background-images__image--cloud-1,
+.section-columns--get-started .background-images__image--cloud-2,
+.section-columns--get-started .background-images__image--cloud-3 {
+  background-image: url("../public/last-column-imgs/section--get-started__cloud.svg");
+}
+.background-images__image--grasshopper-mama {
+  background-image: url("../public/last-column-imgs/section--get-started__grasshopper-mama.svg");
+}
 @media (max-width: 718px) {
   .section-columns--get-started .background-images__image--cloud-1 {
     width: 101px;
     height: 34px;
     bottom: 33%;
     left: 7%;
-    background-image: url("../public/last-column-imgs/section--get-started__cloud.svg");
   }
 }
 .section-columns--get-started .background-images__image--cloud-2 {
@@ -23,7 +41,6 @@
   height: 29px;
   bottom: 22%;
   right: 9%;
-  background-image: url("../public/last-column-imgs/section--get-started__cloud.svg");
 }
 
 @media (max-width: 718px) {
@@ -32,7 +49,6 @@
     height: 17.7px;
     bottom: 33%;
     right: 9%;
-    background-image: url("../public/last-column-imgs/section--get-started__cloud.svg");
   }
 }
 
@@ -50,7 +66,6 @@
     width: 178px;
     height: 520px;
     margin-right: -89px;
-    background-image: url("../public/last-column-imgs/section--get-started__grasshopper-mama.svg");
   }
 }
 
@@ -78,6 +93,10 @@
 .section-columns__column__ctas .start-coding {
   min-width: 280px;
   min-height: 50px;
+}
+
+.ctas .cta__item:first-child {
+  margin-left: 0;
 }
 @keyframes slideLeft {
   0% {
@@ -126,4 +145,94 @@
   .background-images__image--grasshopper-mama {
   animation: 600ms ease 0ms 1 normal both fadeInUp;
   animation-delay: 600ms;
+}
+
+.cta-button.google-play .cta-button__label,
+.cta-button.apple-itunes .cta-button__label {
+  display: none;
+}
+@media screen and (min-width: 718px) {
+  .section-columns--get-started .background-images__image--cloud-1,
+  .section-columns--get-started .background-images__image--cloud-2,
+  .section-columns--get-started .background-images__image--cloud-3 {
+    width: 119.94px;
+    height: 40.31px;
+  }
+  .section-columns--get-started .background-images__image--cloud-1 {
+    bottom: 28%;
+    right: 40%;
+  }
+  .section-columns--get-started .background-images__image--cloud-2 {
+    width: 196px;
+    height: 67px;
+    bottom: 57%;
+    right: 6%;
+  }
+  .section-columns--get-started .background-images__image--cloud-3 {
+    bottom: 73%;
+    right: 3%;
+  }
+  .section-columns--get-started .background-images__image--grasshopper-mama {
+    width: 249px;
+    height: 729px;
+    bottom: -75%;
+    right: 15%;
+  }
+
+  .section-columns__column__title {
+    font-size: 26px;
+    line-height: 30px;
+    max-width: none;
+    width: 100%;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 40px;
+  }
+
+  .section-columns__column--mobile-1x1 {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .section-columns__column--large-title .section-columns__column__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .section-columns__column__ctas {
+    margin-left: 100px;
+  }
+  .ctas--desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .ctas .cta__item {
+    margin-left: 20px;
+  }
+  .cta-button.google-play,
+  .cta-button.apple-itunes {
+    width: 150px;
+    height: 41.6184971px;
+  }
+  .section-columns__column__ctas {
+    margin-left: 100px;
+  }
+  .ctas--mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 718px) and (min-width: 718px) {
+  .section-columns__column--large-title .section-columns__column__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cta-button.google-play,
+  .cta-button.apple-itunes {
+    width: 173px;
+    height: 48px;
+  }
 }

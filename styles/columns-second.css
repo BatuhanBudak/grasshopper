@@ -234,3 +234,15 @@ svg:not(:root) {
   .section-columns__column__title--laptop-tablet::before {
   background-image: url("../public/second-column-imgs/icon5_laptop_tablet.png");
 }
+
+@media screen and (min-width: 718px) {
+  .section-columns--feature-carousel .section-columns__container {
+    padding: 80px 0;
+  }
+  .section-columns__column--mobile-only {
+    display: none;
+  }
+  .section-columns__column--desktop-only {
+    display: block;
+  }
+}
