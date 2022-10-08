@@ -235,6 +235,64 @@ svg:not(:root) {
   background-image: url("../public/second-column-imgs/icon5_laptop_tablet.png");
 }
 
+.section-columns--feature-carousel .section-columns__column--handheld-device {
+  position: relative;
+  left: 80px;
+  height: 423.81944px;
+  flex: 1 0 0;
+}
+
+.section-columns--feature-carousel
+  .section-columns__column--feature-details
+  + .section-columns__column {
+  padding-left: 40px;
+}
+
+.section-columns__column__slide {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.section-columns__column__slide--hand-with-device {
+  width: 359px;
+  height: 485px;
+}
+
+.section-columns__column__slide--laptop {
+  top: 50%;
+  width: 710.52083px;
+  height: 354.01389px;
+  transform: translateY(-50%);
+  left: -25%;
+}
+
+.section-columns--feature-carousel
+  .section-columns__column__slides--features-embedded
+  .section-columns__column__slide {
+  opacity: 0;
+}
+
+.section-columns__column__slide--previous {
+  z-index: 1;
+}
+
+.section-columns__column__slide--active {
+  z-index: 2;
+  animation: 600ms ease 0ms 1 normal both fadeIn;
+  animation-duration: 500ms;
+}
+
+.section-columns--feature-carousel
+  .section-columns__column__slides--features-embedded
+  .section-columns__column__slide--active {
+  animation-duration: 800ms;
+}
+
 @media screen and (min-width: 718px) {
   .section-columns--feature-carousel .section-columns__container {
     padding: 80px 0;
@@ -243,6 +301,113 @@ svg:not(:root) {
     display: none;
   }
   .section-columns__column--desktop-only {
-    display: block;
+    display: flex;
+  }
+
+  .section-columns--feature-carousel .section-columns__column--feature-details {
+    width: auto;
+    height: auto;
+    max-height: none;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .section-columns--feature-carousel .section-columns__column__titles--features,
+  .section-columns--feature-carousel .section-columns__column__carousel {
+    padding-left: 60px;
+  }
+  .section-columns--feature-carousel
+    .section-columns__column__titles--features {
+    left: 60px;
+    height: 100px;
+    margin-bottom: 30px;
+    width: auto;
+  }
+  .section-columns__column__title {
+    font-size: 26px;
+    max-width: none;
+    width: 100%;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 40px;
+  }
+  .section-columns--feature-carousel
+    .section-columns__column__titles--features
+    .section-columns__column__title {
+    font-size: 28px;
+    line-height: 30px;
+    min-width: 360px;
+  }
+  .section-columns--feature-carousel
+    .section-columns__column__title--visual-puzzles::before,
+  .section-columns--feature-carousel
+    .section-columns__column__title--laptop-tablet::before,
+  .section-columns--feature-carousel
+    .section-columns__column__title--industry-standard::before,
+  .section-columns--feature-carousel
+    .section-columns__column__title--feedback::before,
+  .section-columns--feature-carousel
+    .section-columns__column__title--achievements::before {
+    position: absolute;
+    top: -75px;
+    left: 25px;
+  }
+  .section-columns--feature-carousel
+    .section-columns__column--feature-details
+    + .section-columns__column {
+    padding-left: 0;
+  }
+
+  .section-columns--feature-carousel .section-columns__column--handheld-device {
+    height: calc(423.81944px + 426.18056 * (100vw - 718px) / 722);
+  }
+
+  .section-columns--feature-carousel
+    .section-columns__column__slides--features-embedded {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .section-columns__column__slide--hand-with-device {
+    width: calc(359px + 252 * (100vw - 718px) / 722);
+    height: calc(485px + 341 * (100vw - 718px) / 722);
+  }
+  .section-columns__column__slide--laptop {
+    width: calc(710.52083px + 714.47917 * (100vw - 718px) / 722);
+    height: calc(354.01389px + 355.98611 * (100vw - 718px) / 722);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-columns--feature-carousel .section-columns__column__titles--features,
+  .section-columns--feature-carousel .section-columns__column__carousel {
+    padding-left: 130px;
+  }
+  .section-columns--feature-carousel
+    .section-columns__column__titles--features {
+    height: 140px;
+    left: 130px;
+  }
+  .section-columns--feature-carousel
+    .section-columns__column__titles--features
+    .section-columns__column__title {
+    font-size: 36px;
+    line-height: 46px;
+    min-width: 460px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-columns--feature-carousel .section-columns__column--handheld-device {
+    height: 850px;
+  }
+  .section-columns__column__slide--hand-with-device {
+    width: 611px;
+    height: 826px;
+  }
+  .section-columns__column__slide--laptop {
+    width: 1425px;
+    height: 710px;
   }
 }

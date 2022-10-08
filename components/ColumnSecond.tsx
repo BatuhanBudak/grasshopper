@@ -35,6 +35,69 @@ export default function ColumnSecond() {
         <BoxSecond />
       </div>
       <div className="section-columns__container">
+        <div className="section-columns__column section-columns__column--two-column section-columns__column--feature-details section-columns__column--desktop-only">
+          <div className="section-columns__column__titles section-columns__column__titles--features">
+            <div className="section-columns__column__title section-columns__column__title--visual-puzzles section-columns__column__title--active">
+              Visual puzzles develop your problem-solving skills and solidify
+              coding concepts.
+            </div>
+            <div className="section-columns__column__title section-columns__column__title--industry-standard">
+              Use industry-standard JavaScript with just a few taps on your
+              phone.
+            </div>
+            <div className="section-columns__column__title section-columns__column__title--feedback">
+              Real-time feedback guides you like a teacher.
+            </div>
+            <div className="section-columns__column__title section-columns__column__title--achievements">
+              Collect achievements as you learn new skills.
+            </div>
+          </div>
+        </div>
+        <div className="section-columns__column section-columns__column--two-column section-columns__column--handheld-device section-columns__column--desktop-only">
+          <div className="section-columns__column__slides section-columns__column__slides--features-embedded">
+            <div className="section-columns__column__slide section-columns__column__slide--0 section-columns__column__slide--hand-with-device section-columns__column__slide--active section-columns__column__slide--previous">
+              <Image
+                src="/second-column-imgs/slide__device-screen-1.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="section-columns__column__slide section-columns__column__slide--1 section-columns__column__slide--laptop">
+              <Image
+                src="/second-column-imgs/slide__device-screen-1.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="section-columns__column__slide section-columns__column__slide--2 section-columns__column__slide--hand-with-device">
+              <Image
+                src="/second-column-imgs/slide__device-screen-2.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="section-columns__column__slide section-columns__column__slide--3 section-columns__column__slide--hand-with-device">
+              <Image
+                src="/second-column-imgs/slide__device-screen-3.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="section-columns__column__slide section-columns__column__slide--4 section-columns__column__slide--hand-with-device">
+              <Image
+                src="/second-column-imgs/slide__device-screen-4.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="section-columns__column section-columns__column--one-column section-columns__column--mobile-only">
           <div className="section-columns__column__images">
             <div className="section-columns__column__image section-columns__column__image--ios"></div>
