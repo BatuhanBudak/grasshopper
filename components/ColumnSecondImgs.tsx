@@ -1,10 +1,66 @@
+import { motion } from "framer-motion";
+let variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+
+  first: {
+    rotate: "-25deg",
+  },
+  second: {
+    rotate: "-29deg",
+  },
+  third: {
+    rotate: "-345deg",
+  },
+  fourth: {
+    rotate: "-332deg",
+  },
+  fifth: {
+    rotate: "7deg",
+  },
+  sixth: {
+    rotate: "-29deg",
+  },
+  seventh: {
+    rotate: "-4deg",
+  },
+  eigth: {
+    rotate: "-11deg",
+  },
+  nineth: {
+    rotate: "-30deg",
+  },
+  tenth: {
+    rotate: "-345deg",
+  },
+  eleventh: {
+    rotate: "-106deg",
+  },
+  boxFirst: {
+    rotate: "-15deg",
+    opacity: 0.5,
+  },
+  boxSecond: {
+    rotate: "-315deg",
+    opacity: 0.21,
+  },
+};
+
 export const SquareOne = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "first"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--1"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#dcf8ca"
   >
     <rect
       className="section-animated-background__square"
@@ -13,16 +69,19 @@ export const SquareOne = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareSecond = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "second"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--2"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#b9f9da"
   >
     <rect
       className="section-animated-background__square"
@@ -31,16 +90,19 @@ export const SquareSecond = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareThird = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "third"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--3"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#f0fbf6"
   >
     <rect
       className="section-animated-background__square"
@@ -49,16 +111,19 @@ export const SquareThird = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareFourth = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "fourth"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--4"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#caf8e2"
   >
     <rect
       className="section-animated-background__square"
@@ -67,16 +132,19 @@ export const SquareFourth = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareFifth = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "fifth"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--5"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#fbfbfb"
   >
     <rect
       className="section-animated-background__square"
@@ -85,10 +153,14 @@ export const SquareFifth = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 export const SquareSixth = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "sixth"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--6"
     width="50px"
     height="50px"
@@ -101,11 +173,15 @@ export const SquareSixth = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareSeventh = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "seventh"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--7"
     width="50px"
     height="50px"
@@ -118,11 +194,15 @@ export const SquareSeventh = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareEigth = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "eigth"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--8"
     width="50px"
     height="50px"
@@ -135,16 +215,19 @@ export const SquareEigth = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareNinth = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "nineth"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--9"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#dcf8ca"
   >
     <rect
       className="section-animated-background__square"
@@ -153,16 +236,19 @@ export const SquareNinth = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareTenth = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "tenth"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--10"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#efefef"
   >
     <rect
       className="section-animated-background__square"
@@ -171,16 +257,19 @@ export const SquareTenth = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const SquareEleventh = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "eleventh"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-square section-animated-background__svg-square--11"
     width="50px"
     height="50px"
     viewBox="0 0 50 50"
-    fill="#dcf8ca"
   >
     <rect
       className="section-animated-background__square"
@@ -189,15 +278,19 @@ export const SquareEleventh = () => (
       width="50"
       height="50"
     ></rect>
-  </svg>
+  </motion.svg>
 );
 
 export const BoxFirst = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "boxFirst"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-box section-animated-background__svg-box--1"
     width="190px"
     height="190px"
-    fill="#f5f5f5"
+    fill="#e7e7e7"
     viewBox="0 0 190 190"
   >
     <defs>
@@ -300,11 +393,15 @@ export const BoxFirst = () => (
         ></rect>
       </g>
     </g>
-  </svg>
+  </motion.svg>
 );
 
 export const BoxSecond = () => (
-  <svg
+  <motion.svg
+    variants={variants}
+    initial="hidden"
+    whileInView={["visible", "boxSecond"]}
+    viewport={{ once: true, amount: 0.65 }}
     className="section-animated-background__svg-box section-animated-background__svg-box--2"
     width="190px"
     height="190px"
@@ -410,5 +507,5 @@ export const BoxSecond = () => (
         ></rect>
       </g>
     </g>
-  </svg>
+  </motion.svg>
 );
