@@ -62,7 +62,6 @@
 .section-stories__item {
   flex: 0 0 auto;
   flex-direction: column;
-  margin-right: 10px;
   margin-bottom: 40px;
   border-radius: 6px;
   border: 1px solid #e0e0e0;
@@ -76,9 +75,9 @@
 
 .section-stories__item.slick-slide {
   display: flex;
-  height: 390px;
+  height: 420px;
   width: 90%;
-  max-width: 342px;
+  max-width: 345px;
   padding: 30px;
 }
 
@@ -117,7 +116,7 @@
 .section-stories__item__image__container {
   max-height: 70px;
   height: 70px;
-  width: 100%;
+  width: 70px;
   border-radius: 120px;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -125,6 +124,7 @@
 }
 @media screen and (min-width: 718px) {
   .section-stories__item__image__container {
+    width: 120px;
     max-height: 120px;
     height: 120px;
     margin-bottom: 0;
@@ -148,8 +148,8 @@
 
 .section-stories__item__body {
   position: relative;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 16px;
   margin-bottom: 20px;
 }
 

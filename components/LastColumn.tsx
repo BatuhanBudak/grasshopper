@@ -1,19 +1,66 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 export default function LastColumn() {
+  let variants = {
+    hidden: { opacity: 0, y: "20%" },
+    visible: {
+      opacity: 1,
+      y: "0",
+      transition: { duration: 0.6, delay: 0.6 },
+    },
+    cloudFirst: {
+      x: ["0%", "750%", "0%"],
+      transition: { duration: 120, repeat: Infinity, ease: "easeInOut" },
+    },
+    cloudSecond: {
+      x: ["0%", "-750%", "0%"],
+      transition: { duration: 120, repeat: Infinity, ease: "easeInOut" },
+    },
+  };
   return (
     <section className="section-columns section-columns--full-width section-columns--get-started section-columns--turquoise">
       <div className="section-columns__background-images background-images">
-        <div className="section-columns__background-images__image background-images__image background-images__image--cloud-1"></div>
-        <div className="section-columns__background-images__image background-images__image background-images__image--cloud-2"></div>
-        <div className="section-columns__background-images__image background-images__image background-images__image--cloud-3"></div>
-        <div className="section-columns__background-images__image background-images__image background-images__image--grasshopper-mama"></div>
+        <motion.div
+          variants={variants}
+          initial={{ x: 0 }}
+          whileInView="cloudFirst"
+          viewport={{ once: true, amount: 0.2 }}
+          className="section-columns__background-images__image background-images__image background-images__image--cloud-1"
+        ></motion.div>
+        <motion.div
+          variants={variants}
+          initial={{ x: 0 }}
+          whileInView="cloudSecond"
+          viewport={{ once: true, amount: 0.2 }}
+          className="section-columns__background-images__image background-images__image background-images__image--cloud-2"
+        ></motion.div>
+        <motion.div
+          variants={variants}
+          initial={{ x: 0 }}
+          whileInView="cloudFirst"
+          viewport={{ once: true, amount: 0.2 }}
+          className="section-columns__background-images__image background-images__image background-images__image--cloud-3"
+        ></motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="section-columns__background-images__image background-images__image background-images__image--grasshopper-mama"
+        ></motion.div>
       </div>
       <div className="section-columns__container">
         <div className="section-columns__column section-columns__column--two-column section-columns__column--mobile-1x1 section-columns__column--large-title">
-          <div className="section-columns__column__title">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="section-columns__column__title"
+          >
             Get started on your adventure in coding with Grasshopper.
-          </div>
+          </motion.div>
 
           <div className="section-columns__column__ctas ctas ctas--desktop">
             <a

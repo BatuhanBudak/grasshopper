@@ -3,9 +3,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default class Carousel extends Component {
   render() {
+    let variants = {
+      hidden: { opacity: 0, y: "20%" },
+      visible: {
+        opacity: 1,
+        y: "0",
+        transition: {
+          duration: 0.5,
+        },
+      },
+    };
+
     const settings = {
       dots: false,
       infinite: true,
@@ -63,7 +75,15 @@ export default class Carousel extends Component {
       <section className="section-stories section-stories--light-grey ng-scope">
         <div className="section-stories__container" role="toolbar">
           <div className="section-stories__header">
-            <h2 className="section-stories__title">Grasshopper stories</h2>
+            <motion.h2
+              variants={variants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              className="section-stories__title"
+            >
+              Grasshopper stories
+            </motion.h2>
           </div>
 
           <Slider className="section-stories__group" {...settings}>

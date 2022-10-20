@@ -1,15 +1,39 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 export default function Tout() {
+  let variants = {
+    hidden: { opacity: 0, y: "20%" },
+    visible: {
+      opacity: 1,
+      y: "0",
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <section className="section-touts section-touts--light-green">
       <div className="section-touts__container">
-        <h2 className="section-touts__title">
+        <motion.h2
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="section-touts__title"
+        >
           The best way to start your coding adventure.
-        </h2>
+        </motion.h2>
         <ul className="section-touts__group">
-          <li className="section-touts__item section-touts__item--learn">
+          <motion.li
+            variants={variants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="section-touts__item section-touts__item--learn"
+          >
             <div className="section-touts__item__content">
               <div className="section-touts__item__image">
                 <div className="section-touts__item__image__container">
@@ -26,8 +50,14 @@ export default function Tout() {
                 write real JavaScript.
               </div>
             </div>
-          </li>
-          <li className="section-touts__item section-touts__item--learn">
+          </motion.li>
+          <motion.li
+            variants={variants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="section-touts__item section-touts__item--learn"
+          >
             <div className="section-touts__item__content">
               <div className="section-touts__item__image">
                 <div className="section-touts__item__image__container">
@@ -44,8 +74,14 @@ export default function Tout() {
                 your abilities.
               </div>
             </div>
-          </li>
-          <li className="section-touts__item section-touts__item--learn">
+          </motion.li>
+          <motion.li
+            variants={variants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="section-touts__item section-touts__item--learn"
+          >
             <div className="section-touts__item__content">
               <div className="section-touts__item__image">
                 <div className="section-touts__item__image__container">
@@ -62,7 +98,7 @@ export default function Tout() {
                 as a coder.
               </div>
             </div>
-          </li>
+          </motion.li>
         </ul>
       </div>
     </section>

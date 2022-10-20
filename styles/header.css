@@ -339,4 +339,8 @@ header {
   .header__container--scroll.inview {
     transform: translateY(0);
   }
+  .header__container--scroll.inview .nav__menu__list__item__link:hover,
+  .header__container--scroll.inview .nav__menu__list__item__link:focus {
+    color: white;
+  }
 }

@@ -1,8 +1,11 @@
-// import { MobileNavMenuIcon } from "../Icon";
-
 import { CloseMenu, GrassHopperDrawerLogo } from "../../Icons";
 
-export default function NavDrawer({ drawerOpen, toggleDrawer }) {
+type Props = {
+  drawerOpen: boolean;
+  toggleDrawer: () => void;
+};
+
+export default function NavDrawer({ drawerOpen, toggleDrawer }: Props) {
   return (
     <div
       className="nav__drawer"
